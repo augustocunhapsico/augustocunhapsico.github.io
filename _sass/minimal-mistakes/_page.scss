@@ -179,6 +179,7 @@ body {
 .page__hero {
   position: relative;
   margin-bottom: 2em;
+  border-radius: 0 0 2rem 2rem;
   @include clearfix;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
@@ -188,6 +189,7 @@ body {
   &--overlay {
     position: relative;
     margin-bottom: 2em;
+    border-radius: 0 0 2rem 2rem;
     padding: 3em 0;
     @include clearfix;
     background-size: cover;
