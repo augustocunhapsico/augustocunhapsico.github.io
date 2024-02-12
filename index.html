@@ -4,30 +4,39 @@ layout: splash
 permalink: /
 header:
   overlay_color: "#FFBF00"
-  overlay_filter: "0.1"
+  overlay_filter: "0"
   image: "/assets/images/augusto.png"
   actions:
-    - label: "Agende"
+    - label: "<i class='fab fa-whatsapp' aria-hidden='true'></i> Agende sua consulta"
       url: "https://augustocunhapsico.github.io/"
-excerpt: "<b>Augusto Cunha</b>, psicólogo.<br/>Como psicólogo experiente e especializado em psicoterapia breve, psicopatologia, dependência química, Gestalt e Abordagem Centrada na Pessoa, trago a experiência em oferecer suporte terapêutico a uma ampla gama de pacientes. Com um estilo de trabalho que valoriza o pensamento divergente, minha abordagem única visa atender às necessidades individuais de cada cliente, promovendo o crescimento pessoal e o bem-estar emocional."
+excerpt: "<b>Augusto Cunha</b>, psicólogo, CRP 2963-15.<br/>Como psicólogo experiente e especializado em psicoterapia breve, psicopatologia, dependência química, neropsicologia, gestalt terapia e abordagem centrada na pessoa, trago a experiência em oferecer suporte terapêutico a uma ampla gama de pacientes. Com um estilo de trabalho que valoriza o pensamento divergente, minha abordagem única visa atender às necessidades individuais de cada cliente, promovendo o crescimento pessoal e o bem-estar emocional."
 dependentes: 
-  - title: "Dependentes Químicos em Recuperação:"
+  - title: "Dependentes Químicos:"
     excerpt: "Trabalho com indivíduos que lutam contra a dependência química, oferecendo suporte para a recuperação e desenvolvendo estratégias de enfrentamento para lidar com desafios específicos do processo de reabilitação."
+    image_path: "/assets/images/dependent.jpeg"
 adolescentes: 
-  - title: "Adolescentes em Transição:"
+  - title: "Adolescentes:"
     excerpt: "Auxilio adolescentes em momentos críticos de suas vidas, fornecendo um espaço seguro para explorar questões de identidade, relacionamentos interpessoais, pressões sociais e enfrentamento de desafios emocionais."
+    image_path: "/assets/images/teen.jpeg"
 idosos: 
-  - title: "Idosos em Busca de Significado:"
-    excerpt: "Ofereço apoio à terceira idade, ajudando os idosos a enfrentar questões relacionadas ao envelhecimento, perda, solidão e busca por significado na vida após a aposentadoria."
+  - title: "Idosos:"
+    excerpt: "Ofereço apoio à terceira idade, ajudando os idosos a enfrentar questões relacionadas ao envelhecimento, perda, solidão e busca por significado na vida."
+    image_path: "/assets/images/elder.jpeg"
 individuos: 
   - title: "Indivíduos com Psicopatologias Diversas:"
     excerpt: "Trabalho com uma variedade de condições psicopatológicas, incluindo ansiedade, depressão, transtornos de personalidade e traumas, fornecendo intervenções personalizadas para promover o bem-estar mental e emocional."
+    image_path: "/assets/images/psycho.jpeg"
 outro:
   - excerpt: "Minha abordagem terapêutica é centrada no cliente, enfatizando a empatia, o respeito e a colaboração. Acredito na importância de criar um ambiente terapêutico acolhedor e não julgador, onde os pacientes se sintam capacitados a explorar suas experiências e desafios de forma autêntica e significativa."
 ---
 
-{% include feature_row id="dependentes" type="right" properties='data-aos="fade-left" style="border-bottom: 0px solid; padding: .5rem; border-radius: 1rem; background-color: #BC8F8F"' %}
-{% include feature_row id="adolescentes" type="left" properties='data-aos="fade-right" style="border-bottom: 0px solid; padding: .5rem; border-radius: 1rem; background-color: #722F37; color: #fff"' %}
-{% include feature_row id="idosos" type="right" properties='data-aos="fade-left" style="border-bottom: 0px solid; padding: .5rem; border-radius: 1rem; background-color: #BC8F8F"' %}
-{% include feature_row id="individuos" type="left" properties='data-aos="fade-right" style="border-bottom: 0px solid; padding: .5rem; border-radius: 1rem; background-color: #722F37; color: #fff"' %}
+{% include feature_row id="dependentes" type="right" properties='data-aos="fade-up" style="border-bottom: 0px solid; padding: .5rem; border-radius: 1rem; background-color: #BC8F8F"' img_style="max-height: 200px; object-fit: contain; clip-path: circle();
+" %}
+    
+{% include feature_row id="adolescentes" type="left" properties='data-aos="fade-right" style="border-bottom: 0px solid; padding: .5rem; border-radius: 1rem; background-color: #722F37; color: #fff"' img_style="max-height: 200px; object-fit: contain; clip-path: circle();
+" %}
+{% include feature_row id="idosos" type="right" properties='data-aos="fade-up" style="border-bottom: 0px solid; padding: .5rem; border-radius: 1rem; background-color: #BC8F8F"' img_style="max-height: 200px; object-fit: contain; clip-path: circle();
+" %}
+{% include feature_row id="individuos" type="left" properties='data-aos="fade-right" style="border-bottom: 0px solid; padding: .5rem; border-radius: 1rem; background-color: #722F37; color: #fff"' img_style="max-height: 200px; object-fit: contain; clip-path: circle();
+" %}
 {% include feature_row id="outro" type="center" properties='data-aos="fade-up" style="border-bottom: 0px solid; padding: .5rem; border-radius: 1rem; background-color: #BC8F8F"' %}

@@ -201,7 +201,7 @@ body {
     animation-delay: 0.25s;
 
     a {
-      color: #fff;
+      color: fff;
     }
 
     .wrapper {
@@ -215,14 +215,17 @@ body {
 
     .page__title,
     .page__meta,
-    .page__lead,
+    .page__lead {
+      color: #160087;
+      text-shadow: 1px 1px 4px rgba(#000, 0.5);
+    }
+
     .btn {
-      color: #fff;
       text-shadow: 1px 1px 4px rgba(#000, 0.5);
     }
 
     .page__lead {
-      max-width: $medium;
+      max-width: $x-large;
     }
 
     .page__title {

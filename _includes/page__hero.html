@@ -22,9 +22,9 @@
   style="{% if page.header.overlay_color %}background-color: {{ page.header.overlay_color | default: 'transparent' }};{% endif %} {% if overlay_img_path %}background-image: {% if overlay_filter %}{{ overlay_filter }}, {% endif %}url('{{ overlay_img_path }}');{% endif %}"
 >
   {% if page.header.overlay_color or page.header.overlay_image %}
-    <div class="row">
-      <div class="col-12 p-4 col-md-4 p-md-3" style="max-height: 500px;">
-        <img src="{{ page.header.image | relative_url }}" alt="{{ image_description }}" class="page__hero-image" style="border-radius: 50%; border: 1px solid #BC8F8F;">
+    <div class="row m-0">
+      <div class="col-12 p-4 col-md-4 p-md-3" style="display: flex; justify-content: center;">
+        <img src="{{ page.header.image | relative_url }}" alt="{{ image_description }}" class="page__hero-image" style="border-radius: 50%; border: 1px solid #fff; max-height: 500px; height: fit-content; width: fit-content">
       </div>
       <div class="col-12 p-4 col-md-8 p-md-3">
         <h1 id="page-title" class="page__title" itemprop="headline">
@@ -46,7 +46,8 @@
         {% if page.header.actions %}
         <p>
           {% for action in page.header.actions %}
-          <a href="{{ action.url | relative_url }}" class="btn btn--light-outline btn--large">{{ action.label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>
+          <a href="{{ action.url | relative_url }}" class="btn btn--success btn--large">{{ action.label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>
+          <a href="mailto:contato@augustocunha.psc.br" class="btn btn--success btn--large"><i class='fas fa-envelope' aria-hidden='true'></i> contato@augustocunha.psc.br</a>
           {% endfor %}
           {% endif %}
         </p>
