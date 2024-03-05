@@ -47,7 +47,6 @@
         <p>
           {% for action in page.header.actions %}
           <a href="{{ action.url | relative_url }}" class="btn btn--success btn--large">{{ action.label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>
-          <a href="mailto:contato@augustocunha.psc.br" class="btn btn--success btn--large"><i class='fas fa-envelope' aria-hidden='true'></i> contato@augustocunha.psc.br</a>
           {% endfor %}
           {% endif %}
         </p>
